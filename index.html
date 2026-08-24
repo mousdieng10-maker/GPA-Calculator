@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <title>Payment Options</title>
+</head>
+<body id="body">
+  <nav>
+    Dark mode toggle:
+    <div id="toggle">
+        
+        <div id="on">on</div>
+        <div id="off">off</div>
+    </div>
+  </nav>
+    <div id="access" class="container">
+        <h1 id="name-label">Name</h1>
+        <input id="name-input" type="text" placeholder="type here">
+        <button  id="submitBtn">access</button>
+        <h6 id="warning"></h6>
+    </div>
+    <div id="afterAccess" class="container">
+      <i  id="afterAccessBack" class="fa-solid fa-arrow-left"> back</i>
+        <div id="msgholder">
+           
+        </div>
+        <div class="options">
+            <div class="card" id="gpa">
+                <h4>Calculate GPA.</h4>
+            </div>
+            <div class="card" id="ranking">
+                <h4>Calculate class ranking.</h4>
+            </div>
+            <div class="card" id="grade">
+                <h4>Class Grade.</h4>
+            </div>
+        </div>
+    </div>
+    <div id="gpaCard" class="container">
+      <i id="gpaCardBack" class="fa-solid fa-arrow-left"> back</i>
+        <h1>Calculate <span class="special">GPA</span>. <span id="gpaResult"></span></h1>
+        <div id="classlist">
+           
+        </div>
+        <div class="buttons">
+            <button id="appendClass">+</button>
+            <button id="gpaCalculation">Give Weighted Gpa.</button>
+        </div>
+       
+        <div id="gpaCalc">
+           
+            <h4 id="encouragement"></h4>
+        </div>
+   
+    </div>
+    <div id="classRanking" class="container">
+      <i id="rankingBack" class="fa-solid fa-arrow-left"> back</i>
+      <h1>You are <span class="special">a</span></h1>
+      <h1 id="gpaOutput">Calculate GPA first</h1>
+      
+    </div>
+    <div id="classGrade" class="container">
+        <i id="classGradeBack" class="fa-solid fa-arrow-left"> back</i>
+        <h1>Calculate Class <span class="special">Grade:</span>            <span id="gradeResult"></span></h1>
+        <div id="altList">
+
+        </div>
+        <div class="buttons">
+            <button id="appendGrade">+</button>
+            <button id="gradeCalculation">Calculate Grade</button>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
